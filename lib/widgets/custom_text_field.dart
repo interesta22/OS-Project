@@ -20,7 +20,7 @@ class CustomTextField extends StatefulWidget {
   final Function(String?) validator;
   bool isEnabled;
 
-  CustomTextField({
+  CustomTextField({super.key, 
     this.isEnabled = true,
     this.contentPadding,
     this.focusedBorder,
@@ -42,7 +42,7 @@ class CustomTextField extends StatefulWidget {
 }
 
 class _CustomTextFieldState extends State<CustomTextField> {
-  FocusNode _focusNode = FocusNode();
+  final FocusNode _focusNode = FocusNode();
 
   @override
   void initState() {

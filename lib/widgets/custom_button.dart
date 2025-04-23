@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:os_project/utils/colors.dart';
+// import 'package:os_project/utils/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 // ignore: must_be_immutable
@@ -50,10 +50,7 @@ class CustomButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(borderRadius ?? 16),
         ),
         alignment: Alignment.center,
-        child: Text(
-          buttonText,
-          style: textStyle,
-        ),
+        child: Text(buttonText, style: textStyle),
       ),
     );
   }
